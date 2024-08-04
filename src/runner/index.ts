@@ -6,5 +6,7 @@ export interface ISpacer {
 }
 
 export abstract class Spacer extends NodeBlock<ISpacer> {
-
+    get size(): number {
+        return this.props.size;
+    }
 }
